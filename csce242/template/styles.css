@@ -1,0 +1,18 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: lightgray;
+}
+/* Structure*/
+#content {
+    background: #fff;
+    padding: 5px;
+    width: 80%;
+    /*Center horizontally*/
+    margin: auto;
+
+}
+
+/*Typography*/
+h1 {
+    color: darkslategray;
+}
