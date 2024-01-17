@@ -1,0 +1,63 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(images/dogparkbackground.jpeg)
+}
+
+/* Structure*/
+#border {
+    background: rgba(40, 184, 237, 0.8);
+    padding: 5px;
+    width: 80%;
+    margin: auto;
+
+}
+
+
+/*Navigation*/
+#main-nav a{
+    text-decoration: none;
+    background: #5528ED;
+    color: #f2ebdc;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+#main-nav a:hover{
+    background:#287AED;
+
+}
+a {
+    text-decoration: none;
+    background: #5528ED;
+    color: #f2ebdc;
+    padding: 5px;
+    border-radius: 2px;
+}
+a:hover {
+    background:#287AED;
+}
+
+/*images*/
+img{
+    border: 5px solid lightblue;
+}
+/*tables*/
+table{
+    border-collapse: collapse;
+}
+th,
+td{
+    border: 1px solid black;
+    padding: 4px;
+}
+th{
+    background: #283CED;
+}
+td{
+    background: lightblue;
+}
+
+/*Typography*/
+h1 {
+    color: black;
+}
