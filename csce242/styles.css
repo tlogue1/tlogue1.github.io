@@ -1,18 +1,30 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background: lightgray;
+    background: skyblue;
 }
 /* Structure*/
 #border {
-    background: #fff;
+    background: cornsilk;
     padding: 5px;
     width: 80%;
-    /*Center horizontally*/
     margin: auto;
 
 }
 
+/*links*/
+a {
+    text-decoration: none;
+    color: skyblue;
+    
+}
+
 /*Typography*/
 h1 {
-    color: darkslategray;
+    color: blue;
+}
+h2 {
+    color: blue;
+}
+p {
+    color: blue;
 }
