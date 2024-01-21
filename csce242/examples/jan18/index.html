@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+            Author: Tyler Logue
+        -->
+        <title>Custom Title</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div id="content">
+            <!--
+                completely equivalent to a div, just has a different name
+            -->
+            <header id="main-header"> 
+                <h1>Main Heading</h1>
+                <nav id="main-nav">
+                    <ul class="columns">
+                        <li><a href="#">Nav Item 1</a></li>
+                        <li><a href="#">Nav Item 2</a></li>
+                        <li><a href="#">Nav Item 3</a></li>
+                        <li><a href="#">Nav Item 4</a></li>
+                        <li><a href="#">Nav Item 5</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main id="main-content">
+                <h2>Sub Heading</h2>
+                <!--
+                    Below is how to do columns with a 1:1 ratio, if we wanted it to be 1:2
+                    the second one would be called "two"
+                -->
+                <div class="columns">
+                    <section class="one">
+                        <h3>First Section</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut velit eleifend augue mollis consequat. 
+                            Sed eu lacus ultricies, pretium nibh at, cursus eros. Duis sollicitudin, turpis vel lacinia auctor, dui 
+                            nulla elementum libero, sagittis semper arcu orci vitae nulla. Duis hendrerit pellentesque ante id bibendum. 
+                            Fusce at est a sem tempor tempus. Mauris quis tincidunt justo, eget ultricies orci. Integer eleifend justo nec est vehicula fermentum. Fusce cursus lacus id faucibus lacinia. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                        </p>
+                    </section>
+                    <section class="one">
+                        <h3>Second Section</h3>
+                        <p>
+                            Morbi id feugiat dolor. Etiam vehicula ante at orci congue, ac tempor dui euismod. Pellentesque ut enim eu 
+                            leo laoreet ultricies eu et arcu. Sed pretium velit vitae sem tincidunt, ac tincidunt neque aliquam. Donec 
+                            velit diam, bibendum non tempor a, egestas eget sapien. Nulla dapibus posuere dui eget mollis. Ut elementum, 
+                            massa vitae blandit tincidunt, elit sapien lacinia odio, quis dictum tortor quam a quam. Morbi vitae elit turpis. Vivamus quis tortor nec dui tempor elementum. Pellentesque vitae laoreet lorem, vitae porttitor enim. Ut sed tristique dolor.
+                        </p>
+                    </section>
+                </div>
+                <div class="columns">
+                <section class="one"><img src="https://place-hold.it/300"></section>
+                <section class="one"><img src="https://place-hold.it/300"></section>
+                <section class="one"><img src="https://place-hold.it/300"></section>
+                <section class="one"><img src="https://place-hold.it/300"></section>
+                </div>
+            </main>
+            <footer id="main-footer">
+                <p>&copy; tylerlogue</p> <!-- does a little copywrite thing -->
+            </footer>
+        </div>
+    </body>
+
+</html>
