@@ -81,6 +81,8 @@ body{
 
 
 
+
+
 /*Typography*/
 #main-header h1 {
     color: darkslategray;
@@ -96,10 +98,17 @@ body{
     .flex{
         display: flex;
     }
-
+    .col1of3 {
+        display: flex;
+    }
     #main-nav li,
     .col1of3 {
         flex: 1;
+    }
+    .col1of3 section {
+        max-width:80%;
+        display: inline-block;
+        margin: auto;
     }
     .one {
         flex: 1;
@@ -107,7 +116,18 @@ body{
     .two {
         flex: 2;
     }
-
+    .columns img{
+        max-width: 80%;
+        /*for centering*/
+        display: block;
+        margin: auto;
+    }
+    .columns {
+        display: flex;
+    }
+    .columns section {
+        padding: 5px 20px; 
+    }
 
 }
 
