@@ -4,13 +4,6 @@ body{
 }
 
 /* Structure*/
-#content {
-    padding: 5px;
-    width: 90%;
-    margin: auto;
-    border-radius: 5px;
-}
-
 
 #main-header {
     padding: 1px;
@@ -32,13 +25,15 @@ body{
 }
 
 /*main navigation*/
+
 #main-nav ul {
     padding-left: 0;
 }
+
 #main-nav li {
     list-style-type: none;
-    display: inline-block;
-    background: lightpink;
+    padding: 5px;
+    background-color: lightpink;
 }
 #main-nav a {
     text-decoration: none;
@@ -69,13 +64,13 @@ body{
 
 
 /*Typography*/
-h1 {
+#main-header h1 {
     color: darkslategray;
     text-align: center;
 }
 
 /*Columns*/
-@media only screen and (min-width: 768px) {
+@media (min-width: 900px) {
     .columns {
         display: flex;
     }
