@@ -3,28 +3,65 @@ body{
     background: skyblue;
 }
 /* Structure*/
-#border {
+#content {
     background: cornsilk;
     padding: 5px;
     width: 80%;
     margin: auto;
 
 }
+.col1of3 {
+    padding:5px;
+    margin: 2px;
+}
+
+#main-content {
+    text-align: center;
+    
+}
+.col1of3 {
+    background-color: gray;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
 
 /*links*/
 a {
     text-decoration: none;
-    color: skyblue;
+    color: black;
+    padding: 5px;
+    margin: 5px;
     
 }
 
 /*Typography*/
 h1 {
-    color: blue;
+    color: black;
+    text-align: center;
 }
 h2 {
-    color: blue;
+    color: black;
 }
 p {
-    color: blue;
+    color: black;
+}
+
+/*Larger Resolution*/
+@media (min-width: 900px) {
+    .flex {
+        display: flex;
+    }
+    .columns section {
+        padding: 5px 20px; 
+    }
+    .col1of3 {
+        flex: 1;
+    }
+    .flex img{
+        max-width: 80%;
+        /*for centering*/
+        display: block;
+        margin: auto;
+    }
 }
