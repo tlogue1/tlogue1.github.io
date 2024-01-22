@@ -63,6 +63,11 @@ body{
     color: blue;
 }
 
+.col1of4 {
+    text-align: center;
+    color:white;
+}
+
 
 /*main content navigation*/
 #main-cont ul {
@@ -95,7 +100,8 @@ body{
 /*Larger Resolution*/
 @media (min-width: 900px) {
     #main-nav ul, 
-    .flex{
+    .flex,
+    .bottom{
         display: flex;
     }
     .col1of3 {
@@ -116,17 +122,22 @@ body{
     .two {
         flex: 2;
     }
-    .columns img{
+    
+    .bottom section {
+        padding: 5px 20px; 
+    }
+
+    .bottom {
+        display: flex;
+    }
+    .col1of4 {
+        flex: 1;
+    }
+    .bottom img{
         max-width: 80%;
         /*for centering*/
         display: block;
         margin: auto;
-    }
-    .columns {
-        display: flex;
-    }
-    .columns section {
-        padding: 5px 20px; 
     }
 
 }
