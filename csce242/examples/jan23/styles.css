@@ -1,0 +1,100 @@
+/*CSS vairables*/
+:root {
+    --background-color: #bac7c3;
+    --primary-color: #d4daa2; /*like h1 color*/
+    --secondary-color: #4e7d87; 
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background-color); /*how to call a constant element*/
+}
+/* Structure*/
+#content {
+    background: var(--primary-color);
+    padding: 5px;
+    width: 80%;
+    /*Center horizontally*/
+    margin: auto;
+    border-radius: 5px;
+
+}
+
+#play-area {
+    width: 100%;
+    height: 400px;
+    background: violet;
+    position: relative;
+    /*position: absolute; covers all the text and really weird looking*/
+}
+/*If you have play area positioned to relative, since block is inside of play-area, it will be positioned to where play-area is.
+position parent first and then child inside the parent*/
+#block {
+    width: 150px;
+    height: 150px;
+    background: skyblue;
+    animation-name: play; /*runs the animation on the block*/
+    animation-duration: 2s; /*how long the animation goes forc (s is for seconds*/
+    position: relative;
+    transform: rotate(20deg);
+   /* animation-iteration-count: infinite; does it forever. can also set a time limit*/
+
+    /*margin: auto; puts the block in the middle of the play-area*/
+
+   /* position: static;  default*/
+
+    /*position: absolute; puts the picture in the place and does not wrap text or anything. Does not take up any space on doc*/
+    /*top: 45%;
+    left: 45%;  top and left puts it at the very top of the page. by default it positions it relative to the page
+                no matter what is one there. bottom and right also effect it*/
+
+    /*position: relative; are able to move it but it still takes up space. positions it relative to where it currently is
+    this is good for animations and drop down menus. does not move the page around while you position it*/
+
+    /*position: fixed; places the picture on the page and it moves as you scroll around*/
+    
+}
+
+/*Animations*/ 
+
+/*USE W3 SCHOOLS TO FIGURE OUT HOW TO DO STUFF*/
+
+@keyframes play {
+0% {
+    background: red;
+    opacity: 1;
+    left: 0; /*will not work unless block has a position. moves it from left to right*/
+}
+15% {
+    background: orange;
+}
+30% {
+    background: yellow;
+}
+45% {
+    background: green;
+    opacity: 0;
+    left: 100%;
+}
+60% {
+    background: blue;
+}
+80% {
+    background: indigo;
+}
+100% {
+    background: violet;
+    left: 0;
+}
+
+
+}
+
+/*Typography*/
+h1 {
+    color: darkslategray;
+}
+
+#block p {
+    text-align: center;
+    line-height: 150px; /*this puts the words in the middle of the page. has to be equal to heigh of #block*/
+}
