@@ -14,11 +14,24 @@ body{
 
 /*Header*/
 #main-header {
-    position: relative;
+    position: absolute;
+    background: black;
+    width: 100%;
 }
+
 #header-top {
     position: absolute;
     right: 0;
+    background:black;
+}
+#header-middle {
+    position: relative;
+    width: 100%;
+}
+#header-bottom {
+    position: absolute;
+    width: 100%;
+    background: #73000a;
 }
     
 #header-top ul {
@@ -29,18 +42,28 @@ body{
 
 #header-top li {
     list-style-type: none;
-    padding: 2px;
+    padding: 3px;
     font-size: 30%
    
 }
 #header-top a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
+
+/*Content*/
+#main-contnt {
+    background-color: white;
+    padding-left:0;
+}
+
 
 /*Typography*/
 h1 {
-    color: darkslategray;
+    color: white;
+}
+h2 {
+    color: white;
 }
 
 /*Larger Resolution*/
@@ -50,5 +73,12 @@ h1 {
     }
     #header-top li {
         flex: 1;
+    }
+    #header-middle {
+        flex: 1;
+    }
+    
+    .one {
+        flex:1;
     }
 }

@@ -1,0 +1,119 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: lightgray;
+}
+/* Structure*/
+#content {
+    background: #fff;
+    padding: 5px;
+    width: 85%;
+    /*Center horizontally*/
+    margin: auto;
+    border-radius: 5px;
+
+}
+#main-content {
+    background: white;
+    padding: 5px;
+}
+
+/*main header*/
+#main-header {
+   
+    background: black;
+    width: 100%;
+}
+
+#header-top {
+    
+    right: 0;
+    background:black;
+}
+#header-middle {
+    
+    width: 100%;
+    display: inline-block;
+}
+#header-bottom {
+    
+    width: 100%;
+    background: #73000a;
+}
+    
+/*main content*/
+#main-content h1{
+color: black;
+}
+
+/*Typography*/
+h1 {
+    color: darkslategray;
+}
+#header-middle h1, 
+h2 {
+    color: white;
+}
+
+
+.col1of2 {
+    display: inline-block;
+}
+#header-bottom h1 {
+    color:white;
+}
+
+
+
+/*Main Nav*/
+#main-nav li {
+    list-style-type: none;
+    display: inline-block;
+    
+}
+#main-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: small;
+}
+
+#main-nav {
+    text-align: right;
+}
+#nav-content li {
+    display: block;
+    padding: 5px;
+    
+}
+#nav-content a{
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+}
+
+#header-middle {
+    display: inline-block;
+    color: white;
+}
+
+
+
+
+
+/*Larger Resolution*/
+@media (min-width: 900px) {
+    #main-nav ul, 
+    #header-middle, 
+    .flex-container,
+    .flex {
+        display: flex;
+    }
+    #main-nav li, 
+    .col1of2,
+    .col1 {
+        flex: 1;
+    }
+    .col1of3 {
+        flex: 2;
+    }
+    
+}
