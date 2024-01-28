@@ -39,6 +39,14 @@ body{
     width: 100%;
     background: #73000a;
 }
+#footer-top {
+    background: #ececec;
+    width: 100%;
+}
+#main-footer{
+    background: #73000a;
+    width: 100%;
+}
     
 /*main content*/
 #main-content h1{
@@ -51,6 +59,13 @@ h1 {
 }
 #header-middle h1, 
 h2 {
+    color: white;
+}
+#main-content h1, 
+h2 {
+    color: #73000a;
+}
+h3 {
     color: white;
 }
 
@@ -94,7 +109,21 @@ h2 {
     display: inline-block;
     color: white;
 }
+#footer-top {
+    display: inline-block;
+    color: white;
+}
 
+.img {
+    width: 85%;
+    position: left;
+}
+.text {
+    float: wrap;
+}
+#main-footer li {
+    text-decoration: none;
+}
 
 
 
@@ -114,6 +143,10 @@ h2 {
     }
     .col1of3 {
         flex: 2;
+    }
+    .col1of4,
+    .cols {
+        flex: 1;
     }
     
 }
