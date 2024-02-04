@@ -1,10 +1,16 @@
+:root {
+    --background-color: white;
+    --primary-color:black;
+    --secondary-color: darkgray;
+    --hover-color:blue;
+}
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background: lightgray;
+    background: var(--background-color);
 }
 /* Structure*/
 #content {
-    background: #fff;
+    background: var(--background-color);
     padding: 5px;
     width: 100%;
     /*Center horizontally*/
@@ -16,12 +22,12 @@ body{
     padding: 5px;
     border-radius: 2px;
     margin: 1px;
-    background: white;
+    background: var(--background-color);
 }
 
 #main-header h1 {
     text-align: center;
-    color: Black;
+    color: var(--primary-color);
 }
 
 /*Navigation*/
@@ -40,17 +46,17 @@ body{
 }
 #main-nav a {
     text-decoration: none;
-    color: black;
+    color: var(--primary-color)
     
     
 }
 #main-nav a:hover
 {
-    color: blue;
+    color: var(--hover-color);
 }
 .col1of4 {
     text-align: center;
-    color:white;
+    color:var(--background-color);
 }
 
 .img {
@@ -62,17 +68,17 @@ body{
 .locations,
 .catering,
 .contact {
-    background: darkgray;
+    background:var(--secondary-color);
     margin: auto;
 }
 
 
 /*Typography*/
 h1 {
-    color: darkslategray;
+    color: var(--secondary-color);
 }
 h3 {
-    color: black;
+    color: var(--primary-color);
 }
 
 
