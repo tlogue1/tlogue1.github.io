@@ -3,6 +3,7 @@
     --primary-color:black;
     --secondary-color: darkgray;
     --hover-color:blue;
+    --box-color:gray;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -68,7 +69,7 @@ body{
 .locations,
 .catering,
 .contact {
-    background:var(--secondary-color);
+    background:var(--box-color);
     margin: auto;
 }
 
