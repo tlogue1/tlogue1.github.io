@@ -24,6 +24,13 @@ body{
     text-align: center;
     color: Black;
 }
+.one, 
+.two {
+    background-color: white;
+    padding: 5px;
+    margin: 1px;
+    border-radius: 1px;
+}
 
 /*Navigation*/
 
@@ -57,11 +64,24 @@ h1 {
 
 @media (min-width: 900px) {
 
-    #main-nav ul {
+    #main-nav ul,
+    .flex {
         display: flex;
     }
 
     #main-nav li {
         flex: 1;
+    }
+    .one {
+        flex: 1;
+    }
+    .two {
+        flex: 2;
+    }
+    .two img {
+        max-width: 80%;
+        /*for centering*/
+        display: block;
+        margin: auto;
     }
 }
