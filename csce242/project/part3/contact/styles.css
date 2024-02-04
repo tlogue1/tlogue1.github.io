@@ -61,6 +61,23 @@ body{
     color: var(--hover-color);
 }
 
+#nav-items li {
+    padding: 15px 0;
+    text-align: center;
+}
+#hamburger {
+    padding: 10px;
+}
+#hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 6px 0;
+}
+.hide {
+    display: none;
+}
+
 /*Typography*/
 h1 {
     color: var(--secondary-color);
@@ -87,5 +104,14 @@ h1 {
         /*for centering*/
         display: block;
         margin: auto;
+    }
+    #hamburger {
+        display: none;
+    }
+    #nav-items {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        justify-content: space-evenly;
     }
 }
