@@ -1,0 +1,51 @@
+:root {
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: lightgray;
+}
+
+/* Structure */
+
+#content {
+  background: #fff;
+  padding: 5px;
+  width: 80%;
+  /* center horizontally */
+  margin: auto;
+  border-radius: 5px;
+}
+
+.columns section {
+  padding: 10px;
+}
+
+/*Gradient*/
+#rainbow {
+    width: 80%;
+    margin: auto;
+    height: 300px;
+    background: linear-gradient(45deg, red 15%, orange 30% 40%, yellow 40%, blue 45%, green 60%);
+}
+
+/* Typography */
+
+h1 {
+  color: darkslategray;
+}
+.error {
+    color: red;
+}
+
+/* Larger Resolutions */
+
+@media only screen and (min-width: 600px) {
+  .columns {
+    display: flex;
+  }
+
+  .one {
+    flex: 1;
+  }
+}

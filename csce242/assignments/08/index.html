@@ -4,14 +4,72 @@
         <!--
             Author: Tyler Logue
         -->
-        <title>Custom Title</title>
+        <title>Assignment 8</title>
         <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
-        <div id="content">
-            <h1>Main Heading</h1>
+        <header id="main-header" class="padded-area">
+            <h1>Assignment 8</h1>
+            <h2>If Statements</h2>
+            <nav id="main-nav">
+                <div id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul id="nav-items" class="hide-small">
+                    <li><a href="index.html">Exercise 1</a></li>
+                    <li><a href="#">Exercise 2</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main-content" class="padded-area columns">
+            <div id="columns">
+
+            <section class="col1of2">
+                <div id="col1">
+                <a href="index.html" id="link-click"></a>
+                <p id="display"></p>
+                <h3>Enter Command</h3>
+                
+                <ul>
+                    <li>b: Read a book</li>
+                    <li>c: Act like a clown</li>
+                    <li>p: have a birthday party</li>
+                    <li>r: Walk in the rain</li>
+                    <li>s: Shovel up some dirt</li>
+                    <li>w: Go to work</li>
+                </ul>
+                <p>
+                    <label for="txt-change"></label>
+                    <input id="txt-change" type="text">
+                </p>
+                    <p id="pics"></p> 
+                <img src="images/shovel.jpg"></img>
+            </div>
+            </section>
+
+            <section class="col1of2">
+                <div id="col2">
+                <a href="index.html" id="link-click2"></a>
+                <p id="display"></p>
+                <h3>Yoga Slide</h3>
+                <img src="images/yoga1.jpg"></img>
+
+                <div class="slideContainer">
+                    <input type="range" min="0" max="8" value="4" class="slider" id="myRange">
+                </div>
+
+                </div>
+            </section>
+                
+
+            </div>
         </div>
+        </main>
+
     </body>
     <script src="script.js"></script>
 </html>
