@@ -9,11 +9,10 @@ const changePage = () => {
 
 const showPic = () => {
     const picture = document.getElementById("txt-change").value.toLowerCase().trim();
-    const  change = document.getElementById("pics");
-    const img = document.querySelector("img");
+    const  change = document.getElementById("change");
     
     if(picture == "b"){
-        pics = querySelector("images/")
+        document.getElementById("change").src = "images/birthday.jpg";
     } else if(picture == "c") {
         pics = img.src = "images/"
     } else if(picture == "p") {
@@ -58,3 +57,8 @@ const yogaP = () => {
 document.getElementById("hamburger").onclick = showHideNav;
 document.getElementById("txt-change").onkeyup = showPic;
 document.getElementById("myRange").onkeyup = yogaP;
+
+
+const flip = () => {
+    document.getElementById("img-1").src="images/"
+}

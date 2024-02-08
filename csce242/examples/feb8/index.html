@@ -25,7 +25,7 @@
           <p>Let's get to 10000</p>
           <p>
             <label for="txt-funds">Funds Earned: </label>
-            <input type="text" id="text-funds">
+            <input type="text" id="txt-funds">
             <span id="funds-error" class="error"></span>
           </p>
           <p>
@@ -35,6 +35,29 @@
         </section>
         <section>
           <h3>Forms and Numbers</h3>
+          <form id="my-form" action="#" method="get">
+            <p>
+              <label for="txt-first-name">First Name:</label>
+              <input type="text" name="txt-first-name" required minlenght="5">
+              <span class="error" id="error-first-name"></span>
+            </p>
+            <p>
+              <label for="txt-last-name">Last Name:</label>
+              <input type="text" name="txt-last-name">
+              <span class="error" id="error-last-name"></span>
+            </p>
+            <p>
+              <label for="txt-age">First Name:</label>
+              <input type="number" min="18" name="txt-age" >
+              <span class="error" id="error-agee"></span>
+            </p>
+            <p>
+              <label for="txt-birth-day">Birthday:</label>
+              <input type="date">
+            </p>
+
+            <button type="submit">Continue</button>
+          </form>
         </section>
       </div>
     </div>
