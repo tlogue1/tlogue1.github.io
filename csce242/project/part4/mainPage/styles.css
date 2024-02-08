@@ -1,0 +1,147 @@
+:root {
+    --background-color: white;
+    --primary-color:black;
+    --secondary-color: darkgray;
+    --hover-color:blue;
+    --box-color:gray;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background-color);
+}
+/* Structure*/
+#content {
+    background: var(--background-color);
+    padding: 5px;
+    width: 100%;
+    /*Center horizontally*/
+    margin: auto;
+    border-radius: 5px;
+
+}
+#main-header {
+    padding: 5px;
+    border-radius: 2px;
+    margin: 1px;
+    background: var(--background-color);
+}
+
+#main-header h1 {
+    text-align: center;
+    color: var(--primary-color);
+}
+#nav-items li {
+    padding: 15px 0;
+    text-align: center;
+}
+#hamburger {
+    padding: 10px;
+}
+#hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 6px 0;
+}
+.hide {
+    display: none;
+}
+
+/*Navigation*/
+
+#main-nav ul {
+    padding-left: 0;
+    text-align:center;
+    
+}
+
+#main-nav li {
+    list-style-type: none;
+    padding: 5px;
+    
+    
+}
+#main-nav a {
+    text-decoration: none;
+    color: var(--primary-color)
+    
+    
+}
+#main-nav a:hover
+{
+    color: var(--hover-color);
+}
+.col1of4 {
+    text-align: center;
+    color:var(--background-color);
+}
+
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+}
+.menu,
+.locations,
+.catering,
+.contact {
+    background:var(--box-color);
+    margin: auto;
+}
+
+
+/*Typography*/
+h1 {
+    color: var(--secondary-color);
+}
+h3 {
+    color: var(--primary-color);
+}
+
+
+@media (min-width: 900px) {
+
+    #main-nav ul,
+    .bottom{
+        display: flex;
+    }
+
+    #main-nav li {
+        flex: 1;
+    }
+    .col1of4 {
+        flex: 1;
+    }
+    .bottom section {
+        padding: 5px 20px; 
+    }
+    
+    
+    .flex-container {
+        display: flex;
+        justify-content: center;
+    }
+    .flex-container img {
+        max-width: 80%;
+        display: block;
+        margin: auto;
+    }
+    .bottom img{
+        max-width: 80%;
+        /*for centering*/
+        display: block;
+        margin: auto;
+    }
+    #hamburger {
+        display: none;
+    }
+    #nav-items {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+    
+
+
+}

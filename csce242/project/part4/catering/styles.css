@@ -1,0 +1,138 @@
+:root {
+    --background-color: white;
+    --primary-color:black;
+    --secondary-color: darkgray;
+    --hover-color:blue;
+    --box-color:gray;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background-color);
+
+}
+/* Structure*/
+#content {
+    background: var(--background-color);
+    padding: 5px;
+    width: 80%;
+    /*Center horizontally*/
+    margin: auto;
+    border-radius: 5px;
+
+}
+
+#main-header {
+    padding: 5px;
+    border-radius: 2px;
+    margin: 1px;
+    background: var(--background-color);
+}
+
+#main-header h1 {
+    text-align: center;
+    color: var(--primary-color);
+}
+.one {
+    border-style: solid;
+    text-align: center;
+    padding: 10px;
+}
+.col1of3 {
+    text-align: center;
+    color:var(--background-color);
+}
+.option1,
+.option2 {
+    background: var(--box-color);
+    margin: auto;
+}
+
+/*Navigation*/
+
+#main-nav ul {
+    padding-left: 0;
+    text-align:center;
+    
+}
+
+#main-nav li {
+    list-style-type: none;
+    padding: 5px;
+    
+    
+}
+#main-nav a {
+    text-decoration: none;
+    color: var(--primary-color)
+    
+    
+}
+#main-nav a:hover
+{
+    color: var(--hover-color);
+}
+#nav-items li {
+    padding: 15px 0;
+    text-align: center;
+}
+#hamburger {
+    padding: 10px;
+}
+#hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 6px 0;
+}
+.hide {
+    display: none;
+}
+
+/*Typography*/
+h1 {
+    color: var(--secondary-color);
+}
+h3 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+@media (min-width: 900px) {
+
+    #main-nav ul,
+    .flex,
+    .content {
+        display: flex;
+    }
+
+    #main-nav li {
+        flex: 1;
+    }
+    .one {
+        flex: 1;
+    }
+    .two {
+        flex: 2;
+    }
+    .colof1 {
+        display: flex;
+    }
+    .content img{
+        max-width: 80%;
+        /*for centering*/
+        display: block;
+        margin: auto;
+    }
+    .content section {
+        padding: 5px 20px; 
+    }
+    #hamburger {
+        display: none;
+    }
+    #nav-items {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+}
