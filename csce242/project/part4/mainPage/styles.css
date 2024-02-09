@@ -50,8 +50,8 @@ body{
 /*Navigation*/
 
 #main-nav ul {
-    padding-left: 0;
-    text-align:center;
+    /*padding-left: 0;*/
+    text-align: center;
     
 }
 
@@ -74,12 +74,17 @@ body{
 .col1of4 {
     text-align: center;
     color:var(--background-color);
+    margin: auto;
 }
 
 .img {
     display: block;
-    margin-left: auto;
-    margin-right:auto;
+    margin: auto;
+}
+
+.bottom img {
+    margin: auto;
+    display: block;
 }
 .menu,
 .locations,
@@ -102,7 +107,7 @@ h3 {
 @media (min-width: 900px) {
 
     #main-nav ul,
-    .bottom{
+    .bottom {
         display: flex;
     }
 
@@ -116,16 +121,18 @@ h3 {
         padding: 5px 20px; 
     }
     
-    
     .flex-container {
         display: flex;
         justify-content: center;
+        padding: 5px 20px;
+       
     }
     .flex-container img {
-        max-width: 80%;
         display: block;
         margin: auto;
+        max-width: 80%;
     }
+
     .bottom img{
         max-width: 80%;
         /*for centering*/
