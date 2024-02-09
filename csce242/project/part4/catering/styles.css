@@ -96,6 +96,9 @@ h3 {
     color: var(--primary-color);
     text-align: center;
 }
+p {
+    color: var(--primary-color)
+}
 
 @media (min-width: 900px) {
 
