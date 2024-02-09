@@ -91,6 +91,9 @@ h1 {
 h2 {
     text-align: center;
 }
+p {
+    color: var(--primary-color)
+}
 
 @media (min-width: 900px) {
 
