@@ -3,50 +3,73 @@ const showHideNav = () => {
 
 };
 
-const changePage = () => {
-    document.getElementById("col1").classList.toggle("col2");
+
+
+const change1 = () => {
+    const navItems = document.getElementById("link-click").textContent.trim();
+    const col1 = document.getElementById("col1");
+   const col2 = document.getElementById("col2");
+
+    if (navItems == "Exercise 1") {
+        col1.classList.add("active");
+        col2.classList.remove("active");
+    }  
+
 }
+
+const change2 = () => {
+    const navItems = document.getElementById("link-click2").textContent.trim();
+    const col1 = document.getElementById("col1");
+    const col2 = document.getElementById("col2");
+
+    if (navItems == "Exercise 2") {
+        col1.classList.remove("active");
+        col2.classList.add("active");
+    }  
+
+}
+
 
 const showPic = () => {
     const picture = document.getElementById("txt-change").value.toLowerCase().trim();
-    const  change = document.getElementById("change");
+    const img = document.getElementById("pics");
     
-    if(picture == "b"){
-        document.getElementById("change").src = "images/birthday.jpg";
+    if (picture == "b") {
+            img.src="images/read.jpg";
     } else if(picture == "c") {
-        pics = img.src = "images/"
+        img.src="images/clown.jpg";
     } else if(picture == "p") {
-        pics = "images/"
+        img.src="images/birthday.jpg";
     } else if(picture == "r") {
-        pics = "images/"
+        img.src="images/rain.jpg";
     } else if(picture == "s") {
-        pics = "images/"
+        img.src="images/shovel.jpg";
     } else if(picture == "w") {
-        pics = "images/"
+        img.src="images/work.jpg";
     }   
 }
 
 const yogaP = () => {
-    const yogaPic = document.getElementById("myRange");
-    const  changePic = document.getElementById("slideContainer");
+    const yogaPic = document.getElementById("myRange").value;
+    const  img = document.getElementById("pic");
     let slideContainer = "undeterminable";
 
-    if(changePic == 1 ){
-        slideContainer = <img src="images/"></img>
-    } else if(changePic == 2 ) {
-        slideContainer = "images/"
-    } else if(changePic == 3 ) {
-        slideContainer = "images/"
-    } else if(changePic == 4 ) {
-        slideContainer = "images/"
-    } else if(changePic == 5 ) {
-        slideContainer = "images/"
-    } else if(changePic == 6 ) {
-        slideContainer = "images/"
-    } else if(changePic == 7 ) {
-        slideContainer = "images/"
-    } else if(changePic == 8 ) {
-        slideContainer = "images/"
+    if(yogaPic == 1 ){
+        img.src="images/yoga1.jpg"
+    } else if(yogaPic == 2 ) {
+        img.src="images/yoga2.jpg"
+    } else if(yogaPic == 3 ) {
+        img.src="images/yoga3.jpg"
+    } else if(yogaPic == 4 ) {
+        img.src="images/yoga4.jpg"
+    } else if(yogaPic == 5 ) {
+        img.src="images/yoga5.jpg"
+    } else if(yogaPic == 6 ) {
+        img.src="images/yoga6.jpg"
+    } else if(yogaPic == 7 ) {
+        img.src="images/yoga7.jpg"
+    } else if(yogaPic == 8 ) {
+        img.src="images/yoga8.jpg"
     } 
 }
 
@@ -56,9 +79,10 @@ const yogaP = () => {
 
 document.getElementById("hamburger").onclick = showHideNav;
 document.getElementById("txt-change").onkeyup = showPic;
-document.getElementById("myRange").onkeyup = yogaP;
+document.getElementById("myRange").oninput = yogaP;
+document.getElementById("link-click").onclick = change1;
+document.getElementById("link-click2").onclick = change2;
 
 
-const flip = () => {
-    document.getElementById("img-1").src="images/"
-}
+
+

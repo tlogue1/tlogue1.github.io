@@ -94,6 +94,14 @@ h3 {
     text-align: center;
 }
 
+.column {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
 
 
 /*Larger Resolution*/
