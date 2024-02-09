@@ -102,6 +102,10 @@ h3 {
     display: block;
 }
 
+.pic {
+    margin: auto;
+}
+
 
 
 /*Larger Resolution*/
@@ -124,10 +128,12 @@ h3 {
            margin: auto;
             
     }
-    #col2 img {
+   #col2 img {
         max-width: 80%;
         /*for centering*/
         display: flex;
        margin: auto;
     }
+   
+
 }
