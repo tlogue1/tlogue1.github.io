@@ -1,9 +1,9 @@
 :root {
-    --background-color: white;
+    --background-color: #FBF2ED;
     --primary-color:black;
-    --secondary-color: darkgray;
+    --secondary-color: gray;
     --hover-color:blue;
-    --box-color:gray;
+    --box-color:#CDD5C6;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
