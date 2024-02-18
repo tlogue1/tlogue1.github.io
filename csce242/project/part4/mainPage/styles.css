@@ -127,10 +127,11 @@ h3 {
         padding: 5px 20px;
        
     }
+    
     .flex-container img {
-        display: block;
         margin: auto;
-        max-width: 80%;
+        height: 300px;
+        width: 80%;
     }
 
     .bottom img{

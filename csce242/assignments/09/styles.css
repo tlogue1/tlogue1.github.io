@@ -1,0 +1,85 @@
+/*Structure*/
+:root {
+    --position: 0%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: lightgray;
+}
+.column {
+    background: lightblue;
+}
+#img {
+    max-width: 80%;
+    max-height: 100%;
+}
+#bounce-ball,
+#yoga-pics {
+    border-radius: 3px;
+    margin: 60px;
+}
+
+/*Text*/
+h1,
+h2 {
+    text-align: center;
+}
+#ball-img {
+    position: relative;
+    margin: 0px;
+    top: var(--position);
+}
+/* Main Navigation */
+
+#main-nav ul {
+    padding-left: 0px;
+    text-align: center;
+}
+
+#main-nav li {
+    list-style-type: none;
+    
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+#main-nav a:hover {
+    border-bottom: 1px solid blue;
+}
+
+
+/*Hamburger*/
+
+#hamburger div {
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+
+/*Larger Resolution*/
+
+@media only screen and (min-width: 600px) {
+   .flex-container {
+    display: flex;
+   }
+   #main-nav li {
+    display: inline-block;
+}
+
+#hamburger {
+    display: none;
+}
+.hide-small {
+    display: block;
+}
+#yoga-pics img {
+    display: block;
+}
+   
+
+}
