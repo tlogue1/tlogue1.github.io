@@ -5,3 +5,4 @@ const toggleHamburger = () => {
 window.onload = () => {
     document.getElementById("hamburger").onclick = toggleHamburger;
 };
+
