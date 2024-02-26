@@ -1,0 +1,13 @@
+•	Make images wider and add padding
+•	Squeeze the left side and fix the padding
+•	Fix the font style and have curved images
+o	    It looks very sharp
+•	Contact page
+o	    fix the pictures and work on it
+•	Put a footer in there on the pages
+•	Chunk of white space on the locations page
+•	Work on the careers and contact page
+•	No underlined links for the title on main page
+•	Make a preview page for each item
+•	Login link on a different menu, not the main one
+o	    Maybe put it on the contact/careers page
