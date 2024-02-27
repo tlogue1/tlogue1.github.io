@@ -21,7 +21,11 @@ body{
 }
 
 /*modal from w3 Schools*/
-
+#dialog section {
+    padding: 10px;
+    background: white;
+    margin: 10px;
+  }
 
 
 /*Typography*/
