@@ -2,31 +2,9 @@
 /* Structure */
   body {
     background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
-  .info {
-    border: 2px solid green;
-    background: lightblue;
-  }
-  
-  .info header {
-    background-color: green;
-    margin: 0 auto;
-  }
-  
-  
-  /* gallery */
-  
-  .items section {
-    margin: 1%;
-    padding: 1%;
-    background-color: gray;
-    text-align: center;
-  }
-  
-  .items section.highlighted {
-    opacity: 100%;
-  }
   
   /* Trees */
   
@@ -36,68 +14,29 @@
     border-radius: 5px;
     margin: 5px;
     color: white;
+    width: auto;
+    height: auto;
   }
   
-  /* Tables */
-  
-  #children-table {
-    border-collapse: collapse;
-  }
-  
-  #children-table th,
-  #children-table td {
-    border: 1px solid darkgray;
-    padding: 5px;
-  }
-  
-  #children-table th {
-    background-color: lightblue;
-    color: white;
-  }
-  
-  #children-table tr:hover {
-    background-color: aqua;
-  }
-  
-  #child-details {
-    margin: 5px;
-    border: 1px solid darkblue;
-    background: lightcoral;
-    border-radius: 5px;
-    padding: 5px;
-  }
-  
-  #child-details h3 {
+  #trees h3 {
     color: white;
     text-align: center;
   }
   
-  #child-details img {
-    max-width: 30%;
+  #trees img {
+    max-width: 80%;
     display: block;
     margin: auto;
   }
   
   /* Typography */
   
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
   
   h1,
   h3 {
     text-align: center;
   }
   
-  .arrow {
-    text-decoration: none;
-    padding-left: 10px;
-    color: white;
-  }
-  .columns section {
-    padding: 1%;
-    margin: 1%;
-  }
   
   .hidden {
     display: none;
@@ -113,10 +52,6 @@
       align-items: right;
     }
     
-    .items section {
-      flex: 20%;
-      flex-grow: 0;
-    }
     #trees {
       display: flex;
     }
