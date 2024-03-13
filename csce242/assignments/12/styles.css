@@ -1,6 +1,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background: lightgray;
+    background: gray;
 }
 /* Structure*/
 #content {
@@ -13,8 +13,63 @@ body{
 
 }
 
+.main-house {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    background-color: blue;
+    
+}
+
+.main-house img {
+    width: 300px;
+    height: auto;
+}
+
+.house-info {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.house-info h2 {
+    margin-top: 0;
+}
+
+.floor-plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+    background-color: lightblue;
+}
+
+.floor-plan {
+    width: 45%;
+    margin-right: 5%;
+    margin-bottom: 20px;
+   
+}
+
+.floor-plan h2 {
+    text-align: center;
+}
+
+.floor-plan img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
 /*Typography*/
 h1 {
     color: darkslategray;
     text-align: center;
 }
+
+
+
+
