@@ -6,7 +6,7 @@ body{
 #content {
     background: #678f98;
     padding: 5px;
-    width: 80%;
+    width: 100%;
     margin: auto;
 
 }
@@ -34,14 +34,74 @@ a {
     margin: 5px;
     
 }
+/* Main Navigation */
 
+#main-nav ul {
+    padding-left: 0px;
+    text-align: center;
+}
+
+#main-nav li {
+    list-style-type: none;
+    
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+#main-nav a:hover {
+    border-bottom: 1px solid blue;
+}
+
+
+/*Hamburger*/
+
+#hamburger div {
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.hide-small {
+    display: none;
+}
+
+
+.column {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+#col1,
+#col2 {
+    width: 100%;
+    background-color: lightblue;
+    border: 2px solid black;
+    margin: auto;
+}
+
+
+
+.padded-area {
+    padding: 5px;
+    margin: auto;
+}
 /*Typography*/
 h1 {
     color: black;
     text-align: center;
 }
 h2 {
+    text-decoration: none;
     color: black;
+    padding: 5px;
+    margin: 5px;
 }
 p {
     color: black;
@@ -63,5 +123,15 @@ p {
         /*for centering*/
         display: block;
         margin: auto;
+    }
+    #main-nav li {
+        display: inline-block;
+    }
+        
+    #hamburger {
+        display: none;
+    }
+    .hide-small {
+        display: block;
     }
 }

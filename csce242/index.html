@@ -6,17 +6,31 @@
         <link rel="stylesheet" href="styles.css">
         
     </head>
+    
 
     <body>
         <div id="content">
+
+
             <h3>Tyler Logue</h3>
-            <header id="main-header">
-            <h1>CSCE 242: Website Application</h1>
-        </header>
+            <header id="main-header" class="padded-area">
+                <h1>Web Applications</h1>
+                <nav id="main-nav">
+                    <div id="hamburger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <ul id="nav-items" class="hide-small">
+                        <li><a href="#" id="link-click">Assignments</a></li>
+                        <li><a href="#" id="link-click2">Projects</a></li>
+                    </ul>
+                </nav>
+            </header>
 
             <main id="main-content">
-            <h2>Assignments</h2>
             
+            <div id="col1" class="column">
             <section class="flex">
                 <section class="col1of3">
                     <a href="assignments/01/index.html">Assignment 1 - Basic HTML</a>
@@ -70,13 +84,15 @@
                 </section>
                 <section class="col1of3">
                     <h2>Assignment 13 - Server Side</h2>
-                    <a href="https://github.com/tlogue1/server-hello-world">Github Repe </a>
-                    <a href="https://server-hello-world-efh6.onrender.com/">Render Site</a>
                     <div><img src="images-mainpage/Screen Shot 2024-03-14 at 9.37.32 AM.png"></div>
-                    <p>In this assignment we were tasked with parsing a JSON file in order to display some content .</p>
+                    <a href="https://github.com/tlogue1/server-hello-world">Github Repo </a>
+                    <a href="https://server-hello-world-efh6.onrender.com/">Render Site</a>
                 </section>
             </section>
+        </div>
 
+
+        <div id="col2" class = column>
             <h2>Projects</h2>
             <section class="flex">
                 <section class="col1of3">
@@ -105,11 +121,13 @@
                     <p>In this assingment we were tasked with updating our project.</p>
                 </section>
             </section>
+        </div>
 
         </nav>
         </main>
             
         </div>
     </body>
+    <script src="script.js"></script>
 
 </html>
