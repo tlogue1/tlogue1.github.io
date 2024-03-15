@@ -8,7 +8,7 @@ window.onload = () => {
 
 
 const getCateringOptions = async () => {
-    const url = "catering/catering.json";
+    const url = "catering.json";
     try {
         const response = await fetch(url);
         return response.json();

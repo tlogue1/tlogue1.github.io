@@ -15,7 +15,7 @@ function myFunction() {
 
 
 const getMenuItems = async () => {
-    const url = "menu/menu.json";
+    const url = "menu.json";
     try {
         const response = await fetch(url);
         return response.json();
