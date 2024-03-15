@@ -53,3 +53,5 @@ const showCateringOptions = async () => {
       optionSection.append(ingredients);
     });
   };
+
+  showCateringOptions();
