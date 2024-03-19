@@ -38,37 +38,72 @@
                     <section class="one">
                         <div><img src="images/leftside.jpeg"></div>
                     </section>
-                    <section class="two">
-                        <label for="txt-name">Name: </label>
-                        <div></div>
-                        <input type="text" id="txt-name" placeholder="Enter Name" />
-                        <div></div>
 
-                        <label for="txt-address">Address: </label>
-                        <div></div>
-                        <input type="text" id="txt-address" placeholder="Enter Address"/>
-                        <div></div>
 
-                        <label for="txt-phone number">Phone Number: </label>
-                        <div></div>
-                        <input tupe="text" id="txt-number" placeholder="Enter Phone Number">
-                        <div></div>
-                        
-                        <label for="txt-location">Location: </label>
-                        <div></div>
-                        <input type="text" id="txt-location" placeholder="Enter Location" />
-                        <div></div>
+                    <section class="info-section">
+                        <h2>Contact Us</h2>
+                        <form 
+                        id="contact-form"
+                        action="https://api.web3forms.com/submit" 
+                        method="POST"
+                        >
+                        <input 
+                        type="hidden"
+                        name="access_key"
+                        value="75eab589-aaf5-458a-af7a-f6f86137e274"
+                        />
 
-                        <label for="txt-comments">Comments: </label>
-                        <div></div>
-                        <input type="text" id="txt-comments" placeholder="Enter Comments"/>
-                        <div></div>
+                        <p>
+                            <label for="name">Name:</label>
+                            <input
+                            id="name"
+                            type="text"
+                            placeholder="Enter First and Last"
+                            name="name"
+                            required
+                            />
+                        </p>
+                        <p>
+                            <label for="email">Email:</label>
+                            <input id="email" type="email" name="email" required />
+                        </p>
+                        <p>
+                            <label for="birth-date">Birth Date:</label>
+                            <input type="date" id="birth-date" required />
+                        </p>
+                        <p>
+                            <label for="txt-number">Phone Number:</label>
+                            <input type="text" id="txt-number" placeholder="Enter Phone Number" required />
+                        </p>
+                        <p>
+                            <label for="txt-comments">Comments:</label>
+                            <textarea type="text" id="txt-comments" name="txt-comments" placeholder="Enter Comments" required></textarea>
+                        </p>
+                        <input 
+                        type="hidden"
+                        name="redirect"
+                        value="https://web3forms.com/success"
+                        />
+                        <input
+                        type="hidden"
+                        name="subject"
+                        value="Contact from My Website"
+                        />
+                    <input type="hidden" name="from_name" value="My Website" />
+
+                    <p>
+                        <button type="submit">Submit Form</button>
+                    </p>
+
+                    <p id="result"></p>
+                    </form>
                     </section>
+
                     <sections class="three">
                         <div><img src="images/right-sde.png"></div>
                     </sections>
                 </div>
-                <section class="Login"><a href="#">Login</a></section>
+                
             </main>
         </div>
         <script src="script.js"></script>

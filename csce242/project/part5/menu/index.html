@@ -22,80 +22,91 @@
                         <div></div>
                     </div>
                     <ul id="nav-items" class="flex-container hide">
-                        <li><a href="https://tlogue1.github.io/csce242/project/part5/mainPage/index.html">Home</a></li> 
-                    <li><a href="https://tlogue1.github.io/csce242/project/part5/locations/index.html">Locations</a></li>
+                        <li><a href="https://tlogue1.github.io/csce242/project/part6/mainPage/index.html">Home</a></li> 
+                    <li><a href="https://tlogue1.github.io/csce242/project/part6/locations/index.html">Locations</a></li>
                     <li><a href="#">Menu</a></li>
-                    <li><a href="https://tlogue1.github.io/csce242/project/part5/catering/index.html">Catering</a></li>
-                    <li><a href="https://tlogue1.github.io/csce242/project/part5/contact/index.html">Careers/Contact</a></li>
+                    <li><a href="https://tlogue1.github.io/csce242/project/part6/catering/index.html">Catering</a></li>
+                    <li><a href="https://tlogue1.github.io/csce242/project/part6/contact/index.html">Careers/Contact</a></li>
                 </ul>
                 </nav>
                 <h1>Small Town Bagels</h1>
             </header>
 
             <main>
-                <div id="menu-items"></div>
+               <div id="menu-items"></div>
+                <div id="form">
+                <section class="info-section columns">
+                    <section>
+                      <h4>Add a Bagel</h4>
+                      <p>
+                        Please enter your bagel information, and we can try to add it to the menu.
+                      </p>
+                      <form id="form-bagel">
+                        <p>
+                          <label for="bagel-name">Name:</label>
+                          <input
+                            type="text"
+                            id="bagel-name"
+                            name="bagel-name"
+                            required 
+                            minlength="3"
+                          />
+                        </p>
+                        <p>
+                          <input type="radio" name="toast" value="toasted" required />
+                          <label for="toasted" class="inline">Toasted</label>
+                        </p>
+                        <p>
+                          <input type="radio" name="toast" value="unoasted" />
+                          <label for="untoasted" class="inline">Not Toasted</label>
+                        </p>
+                        <p>
+                          <label for="toppings">Topings</label>
+                          <select name="toppings">
+                            <option value="egg">Egg</option>
+                            <option value="bacon">Bacon</option>
+                            <option value="cheese">Cheese</option>
+                            <option value="creamcheese">Cream Cheese</option>
+                            <option value="none">Plain</option>
+                          </select>
+                        </p>
+                        <p>
+                            <label for="bagel-type">Bagel Type</label>
+                            <select name="bagel-type">
+                              <option value="plain">Plain</option>
+                              <option value="everything">Everything</option>
+                              <option value="salt">Salt</option>
+                              <option value="gluten">Gluten Free</option>
+                              <option value="cheese">Cheese</option>
+                            </select>
+                          </p>
+              
+                        <p>
+                          <input type="checkbox" required name="terms" /><label
+                            for="terms"
+                            class="inline"
+                            >I agree to the terms.</label
+                          >
+                        </p>
+              
+                        <p>
+                          <button type="submit">Submit</button>
+                        </p>
+                      </form>
+                    </section>
+                    <section id="results" class="hidden">
+                      <h4>Results</h4>
+                      <p>
+                        Your bagels information has been added to the system, soemone will
+                        contact you shortly.
+                      </p>
+                    </section>
+                  </section>
+                </div>
+
             </main>
 
-            <!--
-                
-            <main id="main-content">
-                <h2>Our Menu</h2>
-                <section class="content">
-                    <section class="col1of3">
-                        <div class="bagel1">
-                            <div class="popup" onclick="myFunction()"><h3>Bagel 1</h3>
-                                <span class="popuptext" id="myPopup">Plain Bagel with Cream Cheese</span>
-                            </div>
-                            <img src="images/bagel-creamcheese.jpeg">
-                            <p>Plain Bagel with Cream Cheese</p>
-                        </div>
-                    </section>
-                    <section class="col1of3">
-                        <div class="bagel2">
-                            <h3><a href="#">Bagel 2</a></h3>
-                            <img src="images/baconeggandcheese.jpeg">
-                            <p>Bacon Egg and Cheese</p>
-                        </div>
-                    </section>
-                    <section class="col1of3">
-                        <div class="bagel3">
-                           <h3><a href="#">Bagel 3</a></h3>
-                            <img src="images/locks.jpeg">
-                            <p>Bagel with Locks</p>
-                        </div>
-                    </section>
-                </section>
-
-
-                <section class="content">
-                    <section class="col1of3">
-                        <div class="bagel1">
-                            <h3><a href="#">Bagel 4</a></h3>
-                            <img src="images/pbandj.jpeg">
-                            <p>Peanut Butter and Jelly</p>
-                        </div>
-                    </section>
-                    <section class="col1of3">
-                        <div class="bagel2">
-                            <h3><a href="#">Bagel 5</a></h3>
-                            <img src="images/sausage.jpeg">
-                            <p>Sausage Egg and Cheese</p>
-                        </div>
-                    </section>
-                    <section class="col1of3">
-                        <div class="bagel3">
-                           <h3><a href="#">Bagel 6</a></h3>
-                            <img src="images/plain.jpeg">
-                            <p>Plain Bagel</p>
-                        </div>
-                    </section>
-                </section>
-
-
-            </main>
-
-            -->
-
+            
 
         </div>
         <script src="script.js"></script>

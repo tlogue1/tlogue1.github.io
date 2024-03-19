@@ -64,6 +64,35 @@ const showMenuItems = async () => {
   showMenuItems();
 
 
+  const submitBagelForm = (e) => {
+    e.preventDefault(); //dont refresh the page
+
+    const form = e.target;
+    const bagelName = form.elements["bagel-name"].value;
+    const toppings = form.elements["toppings"].value;
+    const type = form.elements["bagel-type"].value;
+    const termsChecked = form.elements["terms"].checked;
+    const size = getRadioValue("toast");
+
+    console.log(bagelName + " is a " + toppings + " on a " + type + " terms checked " + termsChecked);
+
+
+}
+
+const getRadioValue = (radioName) => {
+    const radios = document.getElementsByName(radioName);
+
+    for(let i in radios) {
+        if(radios[i].checked){
+            return radios[i].value;
+        }
+    }
+    return "";
+};
+
+document.getElementById("form-bagel").onsubmit = submitBagelForm;
+
+
 
 
 
