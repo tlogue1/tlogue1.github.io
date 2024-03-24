@@ -10,10 +10,13 @@ body{
     margin: auto;
 
 }
-.col1of3 {
-    padding:5px;
-    margin: 2px;
+.column {
+    background: white;
+    margin: 15px;
+    border-radius: 3px;
+    padding: 5px;
 }
+
 
 #main-content {
     text-align: center;
@@ -80,7 +83,7 @@ a {
 
 #col1,
 #col2 {
-    width: 100%;
+    width: 80%;
     background-color: lightblue;
     border: 2px solid black;
     margin: auto;
@@ -111,9 +114,12 @@ p {
 @media (min-width: 900px) {
     .flex {
         display: flex;
+        flex-wrap: wrap;
     }
     .columns section {
         padding: 5px 20px; 
+        flex: 30%;
+        flex-grow: 0;
     }
     .col1of3 {
         flex: 1;
